@@ -11,4 +11,6 @@ for root, d_names, f_names in os.walk('./cogs/'):
             client.load_extension(f'{d}.{filename[:-3]}')
             print(f'Loaded {filename}')
 
-client.run('ODI1ODg4NTI5OTU5MzU0NDA4.YGEeoQ.E018oFlGgyNOHlJqKQIG53iUkO4')
+f = open("token.txt", "r")
+
+client.run(f.read())
