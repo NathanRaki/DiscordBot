@@ -9,6 +9,8 @@ class Test(commands.Cog):
     @commands.command()
     async def test(self, ctx):
         print('Test command : ')
+        role = discord.utils.get(ctx.guild.roles, name="Gamer")
+        print(type(role))
 
 def setup(client):
     client.add_cog(Test(client))

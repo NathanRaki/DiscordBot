@@ -24,7 +24,6 @@ class MakeTeams(commands.Cog):
         else:
             n_teams = int(n_teams)
         number = 1
-        print(f'{n_users}, {n_teams}')
         while n_users > 0 and n_teams > 0:
             team = random.sample(mentions, int(n_users/n_teams))
             for user in team:
